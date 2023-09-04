@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-div">
+                 <label for="name"> Name:</label> 
+            <input type="text" name="name" required> 
+
+        <label for="fname">Father's Name:</label> 
+        <input type="text" name= "fname"required> 
+
+        <label for="r-num"> Roll Number:</label> 
+        <input type="number" name="r-num" required> 
+
+        <label > Week Days:
+        <input type="radio" value="Week Days" name="radio" checked></label> 
+        
+        <label > Weekend:
+        <input type="radio" value="Weekend" name="radio"  ></label> <br>
+
+        <label for="subjects"> Subjects:</label> 
+        <select name="subjects" id="subjects">
+            <option value="Web & Mobile App">Web & Mobile App</option>
+            <option value="Blockchain">Blockchain</option>
+            <option value="AI">AI</option>
+        </select> <br> 
+
+        <button onclick="getForm()" id="register-btn">Register</button>
+        <button onclick="updateForm(this)" id="update-btn">Update</button>
+
+      </div>
+      <h2> Registered Students: </h2>
+<div class="cards">
+
+    
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
